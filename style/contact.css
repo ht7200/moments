@@ -16,6 +16,25 @@
 .contact h2 {
     margin: 30px 30px 20px 30px !important;
 }
+
+.qq{
+	margin-top: 30px;
+	width: 300px;
+	height: 40px;
+	vertical-align: bottom;
+}
+
+.qq-img{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+}
+
+.qqt{
+	margin-left: 30px;
+}.qqt p{
+	color: #898989;
+}
 #contact_form {
     padding: 0px 25px;
 }
