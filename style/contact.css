@@ -8,9 +8,10 @@
     letter-spacing: 2px;
 }
 .maps {
-	width: 720px;
-	height: 570px;
-	margin: 0 auto;
+	width: 420px;
+	height: 300px;
+	margin-left: 150px;
+	margin-bottom: 100px;
 }
 .contact h2 {
     margin: 30px 30px 20px 30px !important;
