@@ -18,6 +18,43 @@ a:hover {text-decoration: none;}
 .clearfix:after, .clearfix:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
 
 /* ---------------------------------------------------------------------------- */
+/* ------------------------------------progress----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+#progress {
+        position:fixed;
+        top: 50px;
+        height: 3px;
+        background:#b91f1f;
+        transition:opacity 500ms linear;
+        z-index: 100;
+      }
+      #progress.done {
+        opacity:0
+      }
+      #progress span {
+        position:absolute;
+        height:2px;
+        -webkit-box-shadow:#b91f1f 1px 0 6px 1px;
+        -webkit-border-radius:100%;
+        opacity:1;
+        width:150px;
+        right:-10px;
+        -webkit-animation:pulse 2s ease-out 0s infinite;
+      }
+
+      @-webkit-keyframes pulse {
+        30% {
+          opacity:.6
+        }
+        60% {
+          opacity:0;
+        }
+        100% {
+          opacity:.6
+        }
+      }
+/* ---------------------------------------------------------------------------- */
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
 

@@ -1,33 +1,12 @@
-    $(document).ready(function() {
-        $(".firstNav >li").hover(function(){
-            $(this).children("ul").slideDown("fast");
-        },
-        function(){
-            $(this).children("ul").slideUp("fast");
-        })
-        $(".secondNav >li").hover(function(){
-            $(this).children("ul").slideDown("fast");
-        },
-        function(){
-            $(this).children("ul").slideUp("fast");
-        })
+$({ property: 0 }).animate({ property: 100 }, {
+    duration: 3000,
+    step: function() {
+        var percentage = Math.round(this.property);
 
-    });
+        $('#progress').css('width', percentage + "%");
 
-
-
-
-
-    // $(document).ready(function() {
-    //     $("ul.secondNav li").hover(function(){
-    //         $(this).parent("ul").siblings("h3").addClass("choice");
-    //     },
-    //     function(){
-    //         $(this).parent("ul").siblings("h3").removeClass("choice");
-    //     })
-    // });
-    // $(document).ready(function() {       
-    //         if ($("ul.thirdNav li").find("ul") .html()!="") {
-    //             $("ul.thirdNav li").parent("ul").siblings("h3").append("<span class='sub'></span>");                
-    //         }
-    // });
+        if (percentage == 100) {
+            $("#progress").addClass("done"); //完成，隐藏进度条
+        }
+    }
+});
