@@ -9,9 +9,15 @@
 }
 .maps {
 	width: 420px;
+<<<<<<< HEAD
 	height: 150px;
 	margin-left:50px;
     margin-bottom: 10px;
+=======
+	height: 300px;
+	margin-left: 150px;
+	margin-bottom: 100px;
+>>>>>>> 79395ece2ec8626c57887784fa3393363cfc2989
 }
 .contact h2 {
     margin: 30px 30px 20px 30px !important;
@@ -19,15 +25,23 @@
 
 .qq{
 	margin-top: 30px;
+<<<<<<< HEAD
     margin-left: 3em;
+=======
+>>>>>>> 79395ece2ec8626c57887784fa3393363cfc2989
 	width: 300px;
 	height: 40px;
 	vertical-align: bottom;
 }
 
 .qq-img{
+<<<<<<< HEAD
 	width: 128px;
 	height: 128px;
+=======
+	width: 32px;
+	height: 32px;
+>>>>>>> 79395ece2ec8626c57887784fa3393363cfc2989
 	display: inline-block;
 }
 
