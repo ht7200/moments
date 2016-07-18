@@ -1,5 +1,5 @@
 $({ property: 0 }).animate({ property: 100 }, {
-    duration: 3000,
+    duration: 1000,
     step: function() {
         var percentage = Math.round(this.property);
 
